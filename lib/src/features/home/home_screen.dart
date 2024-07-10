@@ -37,7 +37,7 @@ class _MainState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return AutoTabsRouter(
-      routes: const [PersonalAccountsRoute(), JournalLogsRoute(), OpuRoute()],
+      routes: const [BasePersonalAccountsTab(), BaseJournalLogsTab(), BaseOpuTab()],
       builder: (context, child) {
         final tabsRouter = AutoTabsRouter.of(context);
 

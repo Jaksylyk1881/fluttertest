@@ -36,23 +36,44 @@ class AppRouter extends _$AppRouter {
         ),
         AutoRoute(page: PasswordRecoveryRoute.page, path: '/password_recovery'),
         AutoRoute(page: MainRoute.page, path: '/main', children: [
-          RedirectRoute(path: '', redirectTo: 'personal-accounts'),
-          AutoRoute(
-              page: PersonalAccountsRoute.page, path: 'personal-accounts'),
-          AutoRoute(
-            page: JournalLogsRoute.page,
-            path: 'journal-logs',
-          ),
-          AutoRoute(
-            page: OpuRoute.page,
-            path: 'opu',
-          ),
+          ///
+          /// BasePersonalAccountsTab
+          ///
+          AutoRoute(page: BasePersonalAccountsTab.page, children: [
+            AutoRoute(
+              page: PersonalAccountsRoute.page,
+              path: 'personal-accounts',
+              initial: true,
+            ),
+            RedirectRoute(path: '', redirectTo: 'personal-accounts'),
+          ]),
+
+          ///
+          /// BaseJournalLogsTab
+          ///
+          AutoRoute(page: BaseJournalLogsTab.page, children: [
+            AutoRoute(
+              page: JournalLogsRoute.page,
+              path: 'journal-logs',
+              initial: true,
+            ),
+          ]),
+
+          ///
+          /// BaseOpuTab
+          ///
+          AutoRoute(page: BaseOpuTab.page, children: [
+            AutoRoute(
+              page: OpuRoute.page,
+              path: 'opu',
+              initial: true,
+            ),
+          ]),
         ]),
 
         // opu
         AutoRoute(page: OpuDetailRoute.page, path: '/opu/:id'),
-        AutoRoute(
-            page: ReasonFailureRoute.page, path: '/opu/reason-failure/:id'),
+        AutoRoute(page: ReasonFailureRoute.page, path: '/opu/reason-failure/:id'),
         AutoRoute(page: OpuAddReadingRoute.page, path: '/opu/add-reading/:id'),
 
         //
@@ -60,15 +81,25 @@ class AppRouter extends _$AppRouter {
 
         // journal log
         AutoRoute(page: JournalLogRoute.page, path: '/journal-logs/:id'),
-        AutoRoute(
-            page: CompleteApplicationRoute.page,
-            path: '/journal-logs/complete-application/:id'),
-        AutoRoute(
-            page: JournalAddReadingRoute.page,
-            path: '/journal-logs/add-reading/:id'),
+        AutoRoute(page: CompleteApplicationRoute.page, path: '/journal-logs/complete-application/:id'),
+        AutoRoute(page: JournalAddReadingRoute.page, path: '/journal-logs/add-reading/:id'),
 
         // personal account
-        AutoRoute(
-            page: PersonalAccountRoute.page, path: '/personal-accounts/:id'),
+        AutoRoute(page: PersonalAccountRoute.page, path: '/personal-accounts/:id'),
       ];
+}
+
+@RoutePage(name: 'BasePersonalAccountsTab')
+class BasePersonalAccountsPage extends AutoRouter {
+  const BasePersonalAccountsPage({super.key});
+}
+
+@RoutePage(name: 'BaseJournalLogsTab')
+class BaseJournalLogsPage extends AutoRouter {
+  const BaseJournalLogsPage({super.key});
+}
+
+@RoutePage(name: 'BaseOpuTab')
+class BaseOpuPage extends AutoRouter {
+  const BaseOpuPage({super.key});
 }
