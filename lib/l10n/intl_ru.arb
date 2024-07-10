@@ -1,0 +1,22 @@
+{
+  "welcome": "Добро пожаловать!",
+  "login": "Логин",
+  "password": "Пароль",
+  "forget_password": "Забыли пароль?",
+  "testing_value_in_local": "Тестовое значение в локальном файле {value}",
+  "please_enter_your_details": "Пожалуйста, введите свои данные.",
+  "personal_accounts": "Лицевые счета",
+  "add": "Добавить",
+  "choose_city": "Выберите город",
+  "close": "Закрыть",
+  "filter": "Фильтр",
+  "journal_log": "Журнал событий",
+  "loading": "Загрузка...",
+  "no_data": "Нет данных",
+  "go_back_auth": "Вернуться к авторизации",
+  "recover_password": "Восстановить пароль",
+  "update": "Обновить",
+  "opu": "ОПУ",
+  "reset": "Сбросить",
+  "comment": "Комментарий"
+}

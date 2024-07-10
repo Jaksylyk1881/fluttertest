@@ -1,0 +1,22 @@
+{
+  "welcome": "Welcome!",
+  "login": "Login",
+  "password": "Password",
+  "forget_password": "Forget password?",
+  "testing_value_in_local": "This is a test value in local.json ${value}",
+  "please_enter_your_details": "Please enter your details",
+  "personal_accounts": "Personal accounts",
+  "add": "Add",
+  "choose_city": "Choose a city",
+  "close": "Close",
+  "filter": "Filter",
+  "journal_log": "Журнал событий",
+  "loading": "Загрузка...",
+  "no_data": "Нет данных",
+  "go_back_auth": "Вернуться к авторизации",
+  "recover_password": "Восстановить пароль",
+  "update": "Update",
+  "opu": "ОПУ",
+  "reset": "Reset",
+  "comment": "Comment"
+}

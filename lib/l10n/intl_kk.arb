@@ -1,0 +1,22 @@
+{
+  "welcome": "Қош келдіңіз!",
+  "login": "Логин",
+  "password": "Құпия сөз",
+  "forget_password": "Құпия сөзді ұмыттыңыз ба?",
+  "testing_value_in_local": "Локалдың мәнін тексеру {value}",
+  "please_enter_your_details": "Мәліметтеріңізді енгізіңіз",
+  "personal_accounts": "Жеке тіркелгілер",
+  "add": "Қосу",
+  "choose_city": "Қала таңдау",
+  "close": "Жабу",
+  "filter": "Сүзгі",
+  "journal_log": "Журнал событий",
+  "loading": "Загрузка...",
+  "no_data": "Нет данных",
+  "go_back_auth": "Вернуться к авторизации",
+  "recover_password": "Восстановить пароль",
+  "update": "Обновить",
+  "opu": "ОПУ",
+  "reset": "Қалпына келтіру",
+  "comment": "Комментарий"
+}
